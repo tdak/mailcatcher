@@ -1,0 +1,52 @@
+{
+  "name": "mailcatcher",
+  "version": "0.8.0",
+  "repository": "https://github.com/sj26/mailcatcher",
+  "homepage": "https://mailcatcher.me",
+  "license": "MIT",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "luxon": "^1.7.1",
+    "pretty-bytes": "^5.1.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-transform-runtime": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "parcel-bundler": "^1.10.3"
+  },
+  "scripts": {
+    "start": "parcel start web/index.html --out-dir public/ --public-url .",
+    "watch": "parcel watch web/index.html --out-dir public/ --public-url .",
+    "build": "parcel build web/index.html --out-dir public/ --public-url ."
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-transform-runtime"
+    ]
+  },
+  "htmlnano": {
+    "collapseWhitespace": "all"
+  },
+  "postcss": {
+    "modules": false,
+    "plugins": {
+      "autoprefixer": {
+        "browsers": [
+          ">1%",
+          "last 4 versions",
+          "Firefox ESR",
+          "not ie < 9"
+        ],
+        "flexbox": "no-2009"
+      }
+    }
+  }
+}
