@@ -7,7 +7,7 @@ gem "mail", "~> 2.3"
 gem "rack", "~> 1.5"
 gem "sinatra", "~> 1.2"
 gem "sqlite3", "~> 1.3"
-gem "thin", "~> 1.5.0"
+gem "thin", "~> 1.8.0"
 gem "skinny", "~> 0.2.3"
 
 require "open3"
